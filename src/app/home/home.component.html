@@ -1,0 +1,26 @@
+
+   
+      <div  class="food-items-div" >
+
+          
+          @for (item of fooddata; track $index) {
+                  <div  class="food-items">
+                  <img src="{{item.imageurl}}" alt="not running" width="200px" height="200px">
+                  <div class="food-item-element"><strong>{{item.name}} </strong></div>
+                  <div class="food-item-element">Time : {{item.time}}</div>
+                  <div class="food-item-element"><strong> &#8377; </strong>{{item.price}}</div>
+                  <div class="star-div">
+
+                          <span onclick="" class="star">★</span>
+                          <span onclick="" class="star">★</span>
+                          <span onclick="" class="star">★</span>
+                          <span onclick="" class="star">★</span>
+                          <span onclick="" class="star">★</span>
+                        </div>
+                  
+                                
+                  <button  type="button" class="btn btn-outline-danger d-grid gap-2 col-6 ">Add to Cart</button>
+                </div>
+                }
+        </div>
+     
